@@ -3,14 +3,15 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   value: "",
 
-  actions: {
+   actions: {
 
-    onEnter(title) {
-      if(title) {
-        this.get('addBook')({ title });
-      }
-      this.set('value', "");
-    }
+     onEnter(title) {
+       if (title) {
+         this.get('addBook')({ title });
+       }
+       this.set('value', "");  // reset value
+     }
 
-  }
+   }
+
 });

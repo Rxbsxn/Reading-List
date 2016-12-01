@@ -11,7 +11,7 @@ export default Ember.Object.create({
     return Ember.copy(this._records);
   },
 
-  addBooks(book) {
+  addBook(book) {
     this._records.push(book);
   },
 
